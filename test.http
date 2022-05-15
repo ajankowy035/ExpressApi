@@ -1,0 +1,23 @@
+POST http://localhost:4000/new HTTP/1.1
+content-type: application/json
+
+{
+    "title": "To remove",    
+    "description": "New todo description"
+}
+###
+GET http://localhost:4000/all HTTP/1.1
+content-type: application/json
+
+###
+DELETE http://localhost:4000/6280d43bc116d8f0679bc735 HTTP/1.1
+content-type: application/json
+
+###
+PATCH http://localhost:4000/6280d1a4db715b187305a92a HTTP/1.1
+content-type: application/json
+
+{
+    "title": "To remove",    
+    "description": ""
+}
